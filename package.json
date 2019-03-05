@@ -20,7 +20,14 @@
   },
   "homepage": "https://github.com/jomasim/react-store-manager#readme",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "react": "^16.8.3"
   }
 }
