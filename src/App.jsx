@@ -4,6 +4,7 @@ import Home from './components/Home/index.jsx';
 import 'semantic-ui-css/semantic.min.css';
 import Register from './components/Register/index.jsx';
 import Navigation from './components/Navigation/index.jsx';
+import Login from './components/Login/index.jsx';
 class App extends Component{
   render () {
     return(
@@ -13,6 +14,7 @@ class App extends Component{
           <Switch>
             <Route path="/" component={Home} exact/>
             <Route path="/register" component={Register} exact/>
+            <Route path="/login" component={Login} exact/>
           </Switch>
         </div>
       </BrowserRouter>
