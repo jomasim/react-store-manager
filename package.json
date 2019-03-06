@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production"
+    "start": "node server.js",
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --open",
+    "heroku-postbuild":"webpack -p"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
   },
   "dependencies": {
     "css-loader": "^2.1.0",
+    "express": "^4.16.4",
     "file-loader": "^3.0.1",
     "html-loader": "^0.5.5",
     "image-webpack-loader": "^4.6.0",

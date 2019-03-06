@@ -16,12 +16,6 @@ class Navigation extends Component{
               Home
             </Menu.Item>
           </NavLink>
-          <NavLink to='/' >
-            <Menu.Item as='a'>Products</Menu.Item>
-          </NavLink>
-          <NavLink to='/' >
-            <Menu.Item as='a'>Sales</Menu.Item>
-          </NavLink>
           <Menu.Item position='right'>
             <NavLink to='/login'>
             <Button as='a' primary>
