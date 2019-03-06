@@ -23,9 +23,11 @@ class Navigation extends Component{
             <Menu.Item as='a'>Sales</Menu.Item>
           </NavLink>
           <Menu.Item position='right'>
+            <NavLink to='/login'>
             <Button as='a' primary>
               Log in
             </Button>
+            </NavLink>
             <NavLink to='/register'>
             <Button as='a' primary  className='sign-up-btn'>
               Sign Up

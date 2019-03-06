@@ -1,21 +1,20 @@
 import React, {Component} from 'react';
 import { Button, Form, Grid, Header, Segment } from 'semantic-ui-react';
 import { NavLink } from 'react-router-dom';
-import './register.css';
+import '../Register/register.css';
 
-class Register extends Component {
+class Login extends Component {
   render () {
     return (
       <div className='form'>
         <Grid textAlign='center' className='grid-container' verticalAlign='middle'>
           <Grid.Column className='grid-column'>
             <Header as='h2' textAlign='center'>
-              Sign up here
+              Sign in here
             </Header>
             <Form size='large'>
               <Segment basic>
                 <Form.Input fluid icon='user' iconPosition='left' placeholder='E-mail address' />
-                <Form.Input  iconPosition='left' placeholder='Username' />
                 <Form.Input
                   fluid
                   icon='lock'
@@ -23,22 +22,14 @@ class Register extends Component {
                   placeholder='Password'
                   type='password'
                 />
-                <Form.Input
-                  fluid
-                  icon='lock'
-                  iconPosition='left'
-                  placeholder='Confirm Password'
-                  type='password'
-                />
-
                 <Button primary fluid size='large'>
                   Submit
                 </Button>
               </Segment>
             </Form>
-           Already have an account?
-            <NavLink to='/login'>
-            <a href='#'>Sign in</a>
+            Don't have account?
+            <NavLink to='/register'>
+              <a href='#'>Sign up</a>
             </NavLink>
           </Grid.Column>
         </Grid>
@@ -46,5 +37,5 @@ class Register extends Component {
     );
   }
 }
-export default Register
+export default Login;
 
